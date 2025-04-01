@@ -6,7 +6,7 @@
 		// Path is relative to the devcontainer.json file.
 		"dockerfile": "dockerfile"
 	},
-	"postCreateCommand": "cd src && dotnet restore && dotnet build",
+	"postCreateCommand": "cd src && dotnet restore && dotnet build && dotnet run --project src/AzureNamingTool.csproj",
 	"customizations": {
 		"vscode": {
 			"extensions": [
